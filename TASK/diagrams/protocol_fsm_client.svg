@@ -1,0 +1,150 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="874pt" height="319pt" viewBox="0.00 0.00 873.87 318.74">
+<g id="graph0" class="graph" transform="translate(4,314.739990234375) scale(1)" data-name="client_fsm">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-314.74 869.87,-314.74 869.87,4 -4,4"/>
+<text text-anchor="middle" x="432.94" y="-294.14" font-family="Consolas" font-size="14.00">Client FSM (Mealy machine)</text>
+<!-- s -->
+<!-- start -->
+<g id="node2" class="node" pointer-events="visible" data-name="start">
+
+<ellipse fill="none" stroke="black" cx="100.66" cy="-89.15" rx="27.83" ry="27.83"/>
+<text text-anchor="middle" x="100.66" y="-84.95" font-family="Times,serif" font-size="14.00">start</text>
+</g>
+<!-- s&#45;&gt;start -->
+<g id="edge1" class="edge" data-name="s-&gt;start">
+
+<path fill="none" stroke="black" d="M36.11,-89.15C43.44,-89.15 52.32,-89.15 61.1,-89.15"/>
+<polygon fill="black" stroke="black" points="60.91,-92.65 70.91,-89.15 60.91,-85.65 60.91,-92.65"/>
+</g>
+<!-- auth -->
+<g id="node4" class="node" pointer-events="visible" data-name="auth">
+
+<ellipse fill="none" stroke="black" cx="252.26" cy="-89.15" rx="27.83" ry="27.83"/>
+<text text-anchor="middle" x="252.26" y="-84.95" font-family="Times,serif" font-size="14.00">auth</text>
+</g>
+<!-- start&#45;&gt;auth -->
+<g id="edge2" class="edge" data-name="start-&gt;auth">
+
+<path fill="none" stroke="black" d="M128.75,-89.15C152.19,-89.15 186.36,-89.15 212.66,-89.15"/>
+<polygon fill="black" stroke="black" points="212.61,-92.65 222.61,-89.15 212.61,-85.65 212.61,-92.65"/>
+<text text-anchor="start" x="146.33" y="-94.35" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="149.83" y="-94.35" font-family="Times,serif" font-size="14.00" fill="red">_</text>
+<text text-anchor="start" x="156.83" y="-94.35" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="167.71" y="-94.35" font-family="Times,serif" font-size="14.00" fill="blue">AUTH</text>
+</g>
+<!-- open -->
+<g id="node3" class="node" pointer-events="visible" data-name="open">
+
+<ellipse fill="none" stroke="black" cx="411.46" cy="-160.15" rx="29.62" ry="29.62"/>
+<text text-anchor="middle" x="411.46" y="-155.95" font-family="Times,serif" font-size="14.00">open</text>
+</g>
+<!-- open&#45;&gt;open -->
+<g id="edge9" class="edge" data-name="open-&gt;open">
+
+<path fill="none" stroke="black" d="M396.86,-186.27C394.62,-199.78 399.48,-211.95 411.46,-211.95 419.88,-211.95 424.78,-205.93 426.17,-197.66"/>
+<polygon fill="black" stroke="black" points="429.67,-197.74 426.07,-187.78 422.67,-197.82 429.67,-197.74"/>
+<text text-anchor="start" x="358.17" y="-228.35" font-family="Times,serif" font-size="14.00" fill="red">MSG, *REPLY</text>
+<text text-anchor="start" x="446.86" y="-228.35" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="457.74" y="-228.35" font-family="Times,serif" font-size="14.00" fill="blue">_</text>
+<text text-anchor="start" x="368.68" y="-214.35" font-family="Times,serif" font-size="14.00" fill="red">_</text>
+<text text-anchor="start" x="375.68" y="-214.35" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="386.57" y="-214.35" font-family="Times,serif" font-size="14.00" fill="blue">JOIN, MSG</text>
+</g>
+<!-- error -->
+<g id="node5" class="node" pointer-events="visible" data-name="error">
+
+<ellipse fill="none" stroke="black" cx="736.1" cy="-256.15" rx="29.6" ry="29.6"/>
+<text text-anchor="middle" x="736.1" y="-251.95" font-family="Times,serif" font-size="14.00">error</text>
+</g>
+<!-- open&#45;&gt;error -->
+<g id="edge8" class="edge" data-name="open-&gt;error">
+
+<path fill="none" stroke="black" d="M430.98,-182.24C438.89,-190.32 448.73,-198.79 459.27,-204.15 536.32,-243.32 639.02,-253.17 694.84,-255.53"/>
+<polygon fill="black" stroke="black" points="694.38,-259.02 704.5,-255.87 694.63,-252.02 694.38,-259.02"/>
+<text text-anchor="start" x="459.27" y="-259.35" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="462.77" y="-259.35" font-family="Times,serif" font-size="14.00" fill="red">* ∖ MSG, *REPLY, ERR, BYE</text>
+<text text-anchor="start" x="645.18" y="-259.35" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="656.07" y="-259.35" font-family="Times,serif" font-size="14.00" fill="blue">ERR</text>
+</g>
+<!-- end -->
+<g id="node6" class="node" pointer-events="visible" data-name="end">
+
+<ellipse fill="none" stroke="black" cx="836.89" cy="-156.15" rx="24.96" ry="24.96"/>
+<ellipse fill="none" stroke="black" cx="836.89" cy="-156.15" rx="28.96" ry="28.96"/>
+<text text-anchor="middle" x="836.89" y="-151.95" font-family="Times,serif" font-size="14.00">end</text>
+</g>
+<!-- open&#45;&gt;end -->
+<g id="edge6" class="edge" data-name="open-&gt;end">
+
+<path fill="none" stroke="black" d="M441.56,-159.87C515.72,-159.17 711.87,-157.32 796.31,-156.52"/>
+<polygon fill="black" stroke="black" points="796.22,-160.02 806.18,-156.43 796.15,-153.02 796.22,-160.02"/>
+<text text-anchor="start" x="701.29" y="-162.35" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="704.79" y="-162.35" font-family="Times,serif" font-size="14.00" fill="red">ERR</text>
+<text text-anchor="start" x="732.02" y="-162.35" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="742.91" y="-162.35" font-family="Times,serif" font-size="14.00" fill="blue">BYE</text>
+</g>
+<!-- open&#45;&gt;end -->
+<g id="edge7" class="edge" data-name="open-&gt;end">
+
+<path fill="none" stroke="black" d="M440.55,-153.71C501.24,-140.76 648.99,-114.44 770.91,-134.35 780.26,-135.87 790.08,-138.56 799.18,-141.53"/>
+<polygon fill="black" stroke="black" points="797.8,-144.76 808.4,-144.75 800.11,-138.15 797.8,-144.76"/>
+<text text-anchor="start" x="711.41" y="-139.35" font-family="Times,serif" font-size="14.00" style=""> </text>
+<text text-anchor="start" x="714.91" y="-139.35" font-family="Times,serif" font-size="14.00" fill="red" style="">BYE</text>
+<text text-anchor="start" x="742.91" y="-139.35" font-family="Times,serif" font-size="14.00" style="">  /</text>
+<text text-anchor="start" x="753.8" y="-139.35" font-family="Times,serif" font-size="14.00" fill="blue" style="">_</text>
+</g>
+<!-- auth&#45;&gt;open -->
+<g id="edge3" class="edge" data-name="auth-&gt;open">
+
+<path fill="none" stroke="black" d="M278.17,-100.4C303.92,-112.03 344.41,-130.31 373.81,-143.59"/>
+<polygon fill="black" stroke="black" points="372.16,-146.69 382.71,-147.61 375.04,-140.31 372.16,-146.69"/>
+<text text-anchor="start" x="297.92" y="-142.35" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="301.42" y="-142.35" font-family="Times,serif" font-size="14.00" fill="red">REPLY</text>
+<text text-anchor="start" x="345.76" y="-142.35" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="356.65" y="-142.35" font-family="Times,serif" font-size="14.00" fill="blue">_</text>
+</g>
+<!-- auth&#45;&gt;auth -->
+<g id="edge4" class="edge" data-name="auth-&gt;auth">
+
+<path fill="none" stroke="black" d="M238.59,-64.36C236.38,-51.31 240.94,-39.48 252.26,-39.48 267.06,-39.48 270.3,-48.43 261.98,-55.69"/>
+<polygon fill="black" stroke="black" points="260.58,-52.45 253.58,-60.4 264.01,-58.56 260.58,-52.45"/>
+<text text-anchor="start" x="201.12" y="-27.88" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="204.62" y="-27.88" font-family="Times,serif" font-size="14.00" fill="red">!REPLY</text>
+<text text-anchor="start" x="253.62" y="-27.88" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="264.51" y="-27.88" font-family="Times,serif" font-size="14.00" fill="blue">AUTH</text>
+</g>
+<!-- auth&#45;&gt;end -->
+<g id="edge5" class="edge" data-name="auth-&gt;end">
+
+<path fill="none" stroke="black" d="M278.71,-79.94C389.13,-41.32 821.75,96.21 836.5,-114.82"/>
+<polygon fill="black" stroke="black" points="833,-114.76 836.84,-124.63 840,-114.52 833,-114.76"/>
+<text text-anchor="start" x="538.22" y="-43.55" font-family="Times,serif" font-size="14.00" fill="red">ERR</text>
+<text text-anchor="start" x="565.45" y="-43.55" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="576.34" y="-43.55" font-family="Times,serif" font-size="14.00" fill="blue">BYE</text>
+<text text-anchor="start" x="548.34" y="-29.55" font-family="Times,serif" font-size="14.00" fill="red">_</text>
+<text text-anchor="start" x="555.34" y="-29.55" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="566.23" y="-29.55" font-family="Times,serif" font-size="14.00" fill="blue">BYE</text>
+</g>
+<!-- error&#45;&gt;end -->
+<g id="edge10" class="edge" data-name="error-&gt;end">
+
+<path fill="none" stroke="black" d="M758.06,-235.79C767.81,-226.24 779.52,-214.68 789.91,-204.15 796.07,-197.91 802.61,-191.15 808.78,-184.72"/>
+<polygon fill="black" stroke="black" points="810.9,-187.57 815.29,-177.92 805.84,-182.73 810.9,-187.57"/>
+<text text-anchor="start" x="758.06" y="-224.19" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="761.56" y="-224.19" font-family="Times,serif" font-size="14.00" fill="red">_</text>
+<text text-anchor="start" x="768.56" y="-224.19" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="779.45" y="-224.19" font-family="Times,serif" font-size="14.00" fill="blue">BYE</text>
+</g>
+<!-- end&#45;&gt;end -->
+<g id="edge11" class="edge" data-name="end-&gt;end">
+
+<path fill="none" stroke="black" d="M828.11,-184.2C827.33,-196.52 830.26,-207.12 836.89,-207.12 841.35,-207.12 844.13,-202.34 845.24,-195.46"/>
+<polygon fill="black" stroke="black" points="848.73,-195.84 845.61,-185.71 841.73,-195.57 848.73,-195.84"/>
+<text text-anchor="start" x="822.7" y="-212.32" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="826.2" y="-212.32" font-family="Times,serif" font-size="14.00" fill="red">*</text>
+<text text-anchor="start" x="833.2" y="-212.32" font-family="Times,serif" font-size="14.00">  /</text>
+<text text-anchor="start" x="844.09" y="-212.32" font-family="Times,serif" font-size="14.00" fill="blue">_</text>
+</g>
+</g>
+</svg>
